@@ -1,4 +1,4 @@
-let str="violet";
+let str="red";
 switch (str) {
     case "orange":console.log("orange");
         break;
