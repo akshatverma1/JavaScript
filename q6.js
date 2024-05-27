@@ -1,6 +1,5 @@
-let char ='I';
-// console.log(char.charCodeAt());
-if(97<=char.charCodeAt()<=122){
+let char ='s';
+if((97<=char.charCodeAt())&&(char.charCodeAt()<=122)){
     console.log("Small ALphabeta");
 }else{
     console.log("Big Alphabeta");
