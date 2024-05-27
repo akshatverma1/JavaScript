@@ -5,4 +5,10 @@
 // }else{
 //     console.log("Big Alphabeta");
 // }
-let str="akshat";
+let str="aksHat";
+let indx =3;
+if(str[indx]==str[indx].toLowerCase()){
+    console.log("LowerCASE");
+}else{
+    console.log("UpperCASE");
+}
