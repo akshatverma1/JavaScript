@@ -3,5 +3,6 @@ let twitter ={
     content : "I have nothing to post",
     Likes : 10000000000000000000000,
     reposts: 2000000000000,
-    tags:10
+    tags:10,
+    goals:334
 };
