@@ -1,4 +1,5 @@
 function akshat(a, b){
-    console.log(a+b);
+    let sum = a+b;
+    return sum;
 }
-akshat(1,2);
+console.log(akshat(89,90));
