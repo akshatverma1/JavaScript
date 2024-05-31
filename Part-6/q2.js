@@ -4,10 +4,9 @@ let ans =" ";
 // ans = “abcdefgh”
 function unique(uniqueStr){
     for(let i=0;i<str.length;i++){
-        for(let j=0;j<ans.length;j++){
-            if(!(str[i]==ans[j])){
-                ans=ans+str[i];
-            }
+        let char = str[i];
+        if(ans.indexOf(char)==-1){
+            ans = ans + char;
         }
     }
     return ans;
