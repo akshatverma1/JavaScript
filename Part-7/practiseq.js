@@ -3,7 +3,7 @@ let id1=setInterval(()=>{
 },2000);
 setTimeout(()=>{
     clearInterval(id1);
-},1000000);
+},10000000);
 // let length = 4;
 // function callback() {
 //     console.log(this.length);
