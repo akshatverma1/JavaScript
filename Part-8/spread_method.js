@@ -11,7 +11,7 @@ console.log(..."verma");
 // let rrr=[...odd,...even];
 // console.log(rrr);
 
-// spread eith object ilterals
+// spread with object ilterals
 obj1={
     name :"lakshya verma",
     age : 13
