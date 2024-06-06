@@ -3,3 +3,4 @@ function sum(...arr){
         console.log(`Index value is ${arr[i]}`);
     }
 }
+sum('a','b','c','d');
