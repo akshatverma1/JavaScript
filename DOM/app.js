@@ -5,3 +5,4 @@ for (let i=0;i<oldddd.length;i++){
 document.querySelector('p');
 document.querySelector('#myId');
 document.querySelector('.myclass');
+document.querySelectorAll("p");
