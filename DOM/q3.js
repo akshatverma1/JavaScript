@@ -1,0 +1,1 @@
+// solution in q1.js
