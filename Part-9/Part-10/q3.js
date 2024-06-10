@@ -5,4 +5,4 @@ input.addEventListener("input",function(){
     console.log(input.value);
 
 });
-console.log("Github");
+console.log("Githubb");
