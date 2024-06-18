@@ -13,6 +13,7 @@ savetodb("Akshat").then(()=>{
     return savetodb("verma");
 }).then(()=>{
     console.log("Second data is also storeddd");
+    console.log("akshat");
 }).catch(()=>{
     console.log("Data is not stored");
 })
