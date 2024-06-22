@@ -38,6 +38,7 @@ savetodb("Akshat").then(()=>{
     console.log("akshat");
     console.log("akshat");
     console.log("akshat");
+    console.log("akshat");
 }).catch(()=>{
     console.log("Data is not stored");
 })
