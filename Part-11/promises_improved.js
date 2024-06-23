@@ -9,39 +9,13 @@ function savetodb(data){
     });
 }
 savetodb("Akshat").then(()=>{
-    console.log("First Data Is stored");
+    console.log("First Data is stored");
     return savetodb("verma");
 }).then(()=>{
     console.log("Second data is also storeddd");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
-    console.log("akshat");
+    return savetodb("onkaam");
+}).then(()=>{
+    console.log("Third Data is Stored");
 }).catch(()=>{
     console.log("Data is not stored");
 })
