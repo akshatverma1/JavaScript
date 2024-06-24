@@ -1,9 +1,8 @@
 let url = "https://catfact.ninja/fact";
 async function apies() {
     try {
-        let appp = await fetch(url)
-        let data = await appp.json();
-        console.log(data.fact);
+        let appp = await axios.get(url);
+        console.log(appp.data.fact);
     } catch (err) {
         console.log("Error = " + err);
     }
