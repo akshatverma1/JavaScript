@@ -1,0 +1,10 @@
+button{
+    background-color: black;
+    color: wheat;
+}
+p{
+    font-weight: 900;
+    /* font-style: italic; */
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
