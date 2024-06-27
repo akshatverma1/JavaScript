@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+}
+button{
+    background-color: bisque;
+    color: black;
+    border-radius: 3px ;
+}
