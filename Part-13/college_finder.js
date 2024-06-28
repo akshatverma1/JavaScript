@@ -4,6 +4,7 @@ let button  = document.querySelector("button");
 let country;
 console.log("akshat");
 console.log("akshat");
+console.log("akshat");
 button.addEventListener("click",async ()=>{
     country = await inputText.value;
     console.log(country);
