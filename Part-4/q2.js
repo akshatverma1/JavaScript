@@ -10,4 +10,10 @@ while(copy>0){
 }
 console.log(count);
 let msg ="     akshat    ";
-msg.trim();
+let str = "I love coding";
+// str.indexOf("love");
+let car =["Audi","Mercedes","BMW","Xylo","Santro","Tata safari","ven"];
+
+function func(){
+    console.log("Akshat");
+}
