@@ -18,10 +18,9 @@ app.get("/apple",(req,res)=>{
     res.send("akshata pallljfhgvvkufvbihr");
 })
 
-app.get("*",(req,res)=>{
-    res.send("akshata pallljfhgvvkufvbihr");
-})
+
 app.get("/ig/:username",(req,res)=>{
     let {username} = req.params;
     res.send(`${username}`);
+    console.log(req.params);
 })
