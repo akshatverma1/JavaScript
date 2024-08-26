@@ -13,7 +13,9 @@ const path = require("path");
 app.set("View engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
 //
-
+//For Post Request
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
 post = [
     {
@@ -38,11 +40,21 @@ app.listen(port,()=>{
     console.log("Server is Working Condition");
 });
 
+
 app.get("/",(req,res)=>{
     res.render("main.ejs",{post});
 });
 
+
 app.get("/new",(req,res)=>{
     res.render("new.ejs");
-    // res.send("New Post Page"); 
+});
+
+
+app.post("/new",(req,res)=>{
+    let {username,content} = req.body;
+    let id = uuidv4();
+    post.push({id,username,content});
+    console.log(username);
+    res.redirect("http://localhost:3/");
 });
