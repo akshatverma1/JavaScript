@@ -12,7 +12,12 @@
         <h1><%=element.id%></h1>
         <h2><%=element.username%></h2>
         <h2><%=element.content%></h2>    
-        <H4><a href="http://localhost:3/"+element.id>Open</a></H4>
+        <H4><a href="http://localhost:3/open/<%=element.id%>">Open</a></H4>
+
+        <h3><a href="http://localhost:3/update/<%=element.id%>">Update</a></h3>
        <% } %> 
+
+
+       <h2><a href="http://localhost:3/new">New Post</a></h2>
 </body>
 </html>
