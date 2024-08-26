@@ -6,12 +6,14 @@
     <title>Update</title>
 </head>
 <body>
-        <h1><%=posts.id%></h1>
+         <h1><%=posts.id%></h1>
         <h2><%=posts.username%></h2>
-        <form method="get" action="/update/:id">
-            <textarea name="content" ><%=posts.content%></textarea>
-        <button>Submit</button>
+        <form method="post" name="content" action="/update/<%= posts.id %>?_method=PATCH">
+            <textarea name="content"><%=posts.content%></textarea>
+            <button>Submit</button>
         </form>
+
+    
         
 </body>
 </html>

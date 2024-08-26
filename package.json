@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "method-override": "^3.0.0",
+    "override": "^0.0.1"
+  }
+}

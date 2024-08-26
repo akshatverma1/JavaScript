@@ -4,6 +4,9 @@ const app = express();
 const port = 3;
 //
 
+//For Method Override
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 //id generator
 const { v4: uuidv4 } = require('uuid');
 //
@@ -78,18 +81,22 @@ app.get("/open/:id",(req,res)=>{
 //For Update
 app.patch("/update/:id",(req,res)=>{
     let {id} = req.params;
-    let newcontent = req.body;
+    let newcontent = req.body.content;
     let posts = post.find((p) => id===p.id);
     posts.content = newcontent;
-    console.log(posts.content);
-    res.send("patch request accept");
+    console.log(newcontent);
+    res.redirect("http://localhost:3/");
 })
 
-
-
-app.get("/update/:id",(req,res)=>{
+app.get("/updates/:id",(req,res)=>{
     let {id} = req.params;
-    let newcontent = req.body.content;
-    let posts = post.find((p) => id===p.id); 
+    let posts = post.find((p) => id===p.id);
     res.render("update.ejs",{posts});
+})
+
+app.get("/delect/:id",(req,res)=>{
+    let {id} = req.params;
+    let posts = post.find((p) => id===p.id);
+    post.filter((po) => po.id==id);
+    res.redirect("http:localhost:3/");
 })
