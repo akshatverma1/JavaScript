@@ -23,4 +23,15 @@ app.get("/ig/:username",(req,res)=>{
     let {username} = req.params;
     res.send(`${username}`);
     console.log(req.params);
+});
+
+app.get("/search",(req,res)=>{
+    let {q} = req.query;
+    console.log(q);
+    res.send(q);
+})
+
+app.set("View engine","ejs");
+app.get("/ejs",(req,res)=>{
+    res.render("home.ejs");
 })
