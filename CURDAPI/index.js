@@ -84,7 +84,7 @@ app.patch("/update/:id",(req,res)=>{
     let newcontent = req.body.content;
     let posts = post.find((p) => id===p.id);
     posts.content = newcontent;
-    console.log(newcontent);
+    // console.log(newcontent);
     res.redirect("http://localhost:3/");
 })
 
@@ -96,7 +96,10 @@ app.get("/updates/:id",(req,res)=>{
 
 app.get("/delect/:id",(req,res)=>{
     let {id} = req.params;
-    let posts = post.find((p) => id===p.id);
-    post.filter((po) => po.id==id);
-    res.redirect("http:localhost:3/");
-})
+    // let posts = post.find((p) => id===p.id);
+    let newPost = post.filter((po) => po.id!==id);
+    post = {};
+    post = newPost;
+    console.log(post);
+    res.redirect("http://localhost:3/");
+});
