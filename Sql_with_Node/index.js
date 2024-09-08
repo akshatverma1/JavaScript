@@ -11,8 +11,7 @@ let createRandomUser = () => {
 }
 
 console.log("Akshat");
-
-
+console.log("function");
 
 
 const mysql = require('mysql2');
