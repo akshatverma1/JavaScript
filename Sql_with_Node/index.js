@@ -44,7 +44,7 @@ for (let i=0;i<1000;i++){
     data3.push(d);
 }
 console.log(data3);
-
+console.log("akshat");
 
 try {
     connection.query(p, [data3], (err, result) => {
