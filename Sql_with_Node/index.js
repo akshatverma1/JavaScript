@@ -1,5 +1,4 @@
 const { faker } = require('@faker-js/faker');
-
 // faker
 let createRandomUser = () => {
     return [
@@ -45,22 +44,16 @@ for (let i=0;i<1000;i++){
 }
 console.log(data3);
 console.log("akshat");
+console.log("akshatghk");
+
 
 try {
     connection.query(p, [data3], (err, result) => {
-
         if (err) throw err;
         console.log(result);
-
-
-
     })
 }
 catch (err) {
     console.log(err);
 }
-
 connection.end();
-
-
-
