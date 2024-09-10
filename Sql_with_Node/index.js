@@ -9,8 +9,6 @@ let createRandomUser = () => {
     ];
 }
 
-console.log("Akshat");
-console.log("function");
 
 
 const mysql = require('mysql2');
@@ -22,30 +20,27 @@ const connection = mysql.createConnection({
     password: "2424"
 });
 
-//For Single Used
-//let p = "INSERT INTO company (id,username,email,password) VALUES (?,?,?,?)";
-//let data1 = ["123","akshat","akshaverma14@gmail.com","2424"];
-//
+// //For Single Used
+// //let p = "INSERT INTO company (id,username,email,password) VALUES (?,?,?,?)";
+// //let data1 = ["123","akshat","akshaverma14@gmail.com","2424"];
+// //
 
-//For Multiple Used
+// //For Multiple Used
 let p = "INSERT INTO company (id,username,email,password) VALUES ?";
-let data1 = [["124", "lakshya", "onkam288@gmail.com", "2512"], ["125", "rohan", "onkaam1@gmail.com", "2513"],
-["126", "prince", "ankaam1@gmail.com", "2514"]];
-//
+// let data1 = [["124", "lakshya", "onkam288@gmail.com", "2512"], ["125", "rohan", "onkaam1@gmail.com", "2513"],
+// ["126", "prince", "ankaam1@gmail.com", "2514"]];
+// //
 
-let data2 = createRandomUser();
-console.log(data2);
+// let data2 = createRandomUser();
+// console.log(data2);
 
 let data3 = [];
 
-for (let i=0;i<1000;i++){
+for (let i=0;i<4000;i++){
     let d = createRandomUser();
     data3.push(d);
 }
-console.log(data3);
-console.log("akshat");
-console.log("akshatghk");
-console.log("fgh");
+// console.log(data3);
 
 
 try {
